@@ -52,17 +52,20 @@ public class FirstLevelServlet extends HttpServlet {
 		if (seeAnswer != null) {
 			if (lowerCase != null) {
 				String output = string.lower(input);
-				// System.out.println(output);
+				System.out.println(output);
 				request.setAttribute("output", output);
 				RequestDispatcher rd = this.getServletContext().getRequestDispatcher("/WEB-INF/views/level1.jsp");
 				rd.forward(request, response);
 			}
-			/*
-			 * else { input = null; String output = string.lower(input);
-			 * //System.out.println(output); request.setAttribute("output", output);
-			 * RequestDispatcher rd=this.getServletContext().getRequestDispatcher(
-			 * "/WEB-INF/views/firstlevel.jsp"); rd.forward(request, response); }
-			 */
+			
+		    //else { 
+		      // input = null; 
+		       //String output = string.lower(input);
+			   //System.out.println(output); request.setAttribute("output", output);
+			   //RequestDispatcher rd=this.getServletContext().getRequestDispatcher( "/WEB-INF/views/firstlevel.jsp"); 
+			   //rd.forward(request, response); 
+			  //}
+			 
 
 		}
 
